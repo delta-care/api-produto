@@ -15,7 +15,7 @@ public interface ProdutoRepository extends JpaRepository<Produto, String> {
                     " from Produto p " +
                     " where 1=1 " +
                     "   and p.id like concat(:id,'%') " +
-                    "   and p.plano like concat(:plano,'%')",
+                    "   and p.plano like concat(:nome,'%')",
             countQuery =
                     " select count(p) " +
                             " from Produto p " +
