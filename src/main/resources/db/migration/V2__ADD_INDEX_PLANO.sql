@@ -1,0 +1,1 @@
+ALTER TABLE produto ADD INDEX produto_plano_idx (plano);

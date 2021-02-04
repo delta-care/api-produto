@@ -29,7 +29,7 @@ public class ProdutoServiceSpa implements ProdutoService {
     }
 
     @Override
-    @Cacheable(value="produto", key="#root.args")
+    //@Cacheable(value="produto", key="#root.args")
     public List<ProdutoDto> pesquisar(Pageable pageable, String id, String nome) {
         return repository.findAll(pageable, id, nome)
                 .stream()
@@ -38,7 +38,7 @@ public class ProdutoServiceSpa implements ProdutoService {
     }
 
     @Override
-    @CacheEvict(value="produto", allEntries = true)
+    //@CacheEvict(value="produto", allEntries = true)
     public ProdutoDto atualizar(ProdutoDto produtoDto) {
         return salvar(produtoDto);
     }

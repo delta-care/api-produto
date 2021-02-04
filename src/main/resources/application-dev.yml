@@ -11,7 +11,7 @@ spring:
     url: jdbc:mysql://produto-dev.cacvwucgqxal.us-east-2.rds.amazonaws.com
     user: admin
     password: admin123
-    schemas: empresa
+    schemas: produto
     clean-on-validation-error: true
   jpa:
     show-sql: true

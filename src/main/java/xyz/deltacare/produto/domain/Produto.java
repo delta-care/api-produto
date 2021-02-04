@@ -3,6 +3,7 @@ package xyz.deltacare.produto.domain;
 import lombok.*;
 
 import javax.persistence.*;
+import java.math.BigDecimal;
 import java.time.LocalDate;
 
 @Data
@@ -19,6 +20,7 @@ public class Produto {
 
     private String plano;
     private String subplano;
+    private BigDecimal valor;
 
     @Column(name = "data_inicio_vigencia")
     private LocalDate dataInicioVigencia;

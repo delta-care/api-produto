@@ -21,9 +21,9 @@ public interface ProdutoRepository extends JpaRepository<Produto, String> {
                             " from Produto p " +
                             " where 1=1 " +
                             "   and p.id like concat(:id,'%') " +
-                            "   and p.plano like concat(:plano,'%')")
+                            "   and p.plano like concat(:nome,'%')")
     Page<Produto> findAll(
             Pageable pageable,
             @Param("id") String id,
-            @Param("plano") String plano);
+            @Param("nome") String nome);
 }
