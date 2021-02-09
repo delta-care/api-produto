@@ -1,11 +1,17 @@
 server:
+<<<<<<< HEAD
   port: 8083
+=======
+  port: 8082
+>>>>>>> 5ae97be2b4185c0cbe3d29a2e46812879d080abf
 spring:
   application:
     name: api-produto
-  profiles:
-    active: dev
+#  profiles:
+#    active: dev
   cloud:
     kubernetes:
       config:
-        enabled: false
+        name: api-produto 
+      reload:
+        enabled: true
