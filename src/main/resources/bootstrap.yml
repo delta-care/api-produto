@@ -1,9 +1,5 @@
 server:
-<<<<<<< HEAD
-  port: 8083
-=======
-  port: 8082
->>>>>>> 5ae97be2b4185c0cbe3d29a2e46812879d080abf
+  port: 8080
 spring:
   application:
     name: api-produto
@@ -13,5 +9,3 @@ spring:
     kubernetes:
       config:
         name: api-produto 
-      reload:
-        enabled: true
