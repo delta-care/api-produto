@@ -8,4 +8,6 @@ spring:
   cloud:
     kubernetes:
       config:
-        name: api-produto 
+        name: api-produto
+      reload:
+        enabled: true
