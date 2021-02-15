@@ -1,12 +1,14 @@
-# app.profile, k8s.namespace e image.tag definidos via jenkins
+# app.profile, k8s.namespace, image.tag e ops.env definidos via jenkins
 app:
   name: api-produto
   profile:
 k8s:
   namespace:
 image:
-  repository: deltacare/api-produto
+  repository: deltacare/api-produto 
   tag:
 service:
   type: ClusterIP
   port: 8080
+ops:
+  env:
